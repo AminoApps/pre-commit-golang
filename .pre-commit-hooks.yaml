@@ -16,6 +16,12 @@
     files: '.'
     language: 'script'
     description: "Runs `go vet ./...`, requires golang"
+-   id: go-mod-tidy
+    name: 'go mod tidy'
+    entry: run-go-mod-tidy.sh
+    files: '.'
+    language: 'script'
+    description: "Runs `go mod tidy`, requires golang"
 -   id: go-lint
     name: 'go lint'
     entry: run-go-lint.sh
@@ -66,4 +72,4 @@
     entry: run-go-build.sh
     files: '\.go$'
     language: 'script'
-    description: "Runs `go build`, requires golang"    
+    description: "Runs `go build`, requires golang"
